@@ -15,8 +15,7 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 
-// "compile:sass": "node-sass sass/main.scss css/style.comp.css"
-// "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+
 */
 :root {
   --color-primary: #eb2f64;
@@ -28,7 +27,8 @@ Grey dark 3: #999
   --color-gray-light-4: #ccc;
   --color-gray-dark-1: #333;
   --color-gray-dark-2: #777;
-  --color-gray-dark-3: #999; }
+  --color-gray-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4); }
 
 * {
   padding: 0;
@@ -52,3 +52,28 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-gray-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-gray-light-2); }
+
+.content {
+  display: flex;
+  flex-direction: row; }
+
+.sidebar {
+  background-color: var(--color-gray-dark-1);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  background-color: #fff;
+  background-color: orangered;
+  flex: 1; }

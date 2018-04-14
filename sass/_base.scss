@@ -15,8 +15,7 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 
-// "compile:sass": "node-sass sass/main.scss css/style.comp.css"
-// "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+
 */
 
 :root {
@@ -32,6 +31,8 @@ Grey dark 3: #999
   --color-gray-dark-1: #333;
   --color-gray-dark-2: #777;
   --color-gray-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4);
 }
 
 * {
