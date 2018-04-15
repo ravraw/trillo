@@ -37,6 +37,7 @@
 }
 
 .details {
+  font-size: 1.4rem;
   display: flex;
   background-color: var(--color-gray-light-1);
   padding: 4.5rem;
@@ -44,7 +45,6 @@
 }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   padding: 3rem;
   box-shadow: var(--shadow-light);
@@ -53,5 +53,7 @@
 
 .user-reviews {
   flex: 1;
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
