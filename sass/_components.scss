@@ -11,13 +11,9 @@
 
 .search {
   flex: 0 0 40%;
-
+  display: flex;
   align-items: center;
 
-  display: flex;
-
-  &__button {
-  }
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -70,6 +66,7 @@
 .user-nav {
   //   background-color: yellow;
   align-self: stretch;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,14 +107,38 @@
     justify-content: center;
     align-items: center;
   }
-  &__user {
-  }
 
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
     margin-right: 1rem;
   }
-  &__user-name {
+}
+
+//////////////////////////////////
+// SIDE_ NAVIGATION
+
+.side-nav {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+  &__link {
+    flex: 0 0 20%;
+  }
+  &__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+}
+
+//////////////////////////////////
+// LEGAL TEXT
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem;
 }
